@@ -98,23 +98,28 @@ namespace DesafioTecnico.ViewModels
             {
                 if (int.TryParse(Idade, out int idadeConvertida))
                 {
-                    if (ClienteSelecionado == null)
+                    if (ClienteSelecionado == null) // Adicionar novo cliente
                     {
                         Clientes.Add(new Cliente { Nome = Nome, Idade = idadeConvertida, Endereco = Endereco });
                         await Application.Current.MainPage.DisplayAlert("Sucesso", "Cliente adicionado com sucesso!", "OK");
                     }
-                    else
+                    else // Editar cliente existente
                     {
-                        ClienteSelecionado.Nome = Nome;
-                        ClienteSelecionado.Idade = idadeConvertida;
-                        ClienteSelecionado.Endereco = Endereco;
+                        var index = Clientes.IndexOf(ClienteSelecionado);
+                        if (index != -1)
+                        {
+                            Clientes[index] = new Cliente { Nome = Nome, Idade = idadeConvertida, Endereco = Endereco };
+                        }
+
                         await Application.Current.MainPage.DisplayAlert("Editado", "Cliente editado com sucesso!", "OK");
                         ClienteSelecionado = null;
                     }
 
+                    // Limpar campos após operação
                     Nome = string.Empty;
                     Idade = string.Empty;
                     Endereco = string.Empty;
+                    TextoBotao = "Adicionar Cliente"; // Restaurar o texto do botão
                 }
                 else
                 {
@@ -126,6 +131,7 @@ namespace DesafioTecnico.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Erro", "Preencha todos os campos antes de adicionar.", "OK");
             }
         }
+
 
         private void SelecionarCliente(Cliente cliente)
         {

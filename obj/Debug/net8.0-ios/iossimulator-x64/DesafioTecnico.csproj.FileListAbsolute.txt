@@ -314,3 +314,4 @@ C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-ios\i
 C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-ios\iossimulator-x64\DesafioTecnico.pdb
 C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-ios\iossimulator-x64\DesafioTecnico.genruntimeconfig.cache
 C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-ios\iossimulator-x64\ref\DesafioTecnico.dll
+C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-ios\iossimulator-x64\DesafioTecnico.sourcelink.json

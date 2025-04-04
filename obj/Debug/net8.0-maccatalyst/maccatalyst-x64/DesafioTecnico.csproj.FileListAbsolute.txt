@@ -302,3 +302,4 @@ C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-macca
 C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DesafioTecnico.pdb
 C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DesafioTecnico.genruntimeconfig.cache
 C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\DesafioTecnico.dll
+C:\Users\almei\source\repos\DesafioTecnico\DesafioTecnico\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\DesafioTecnico.sourcelink.json
