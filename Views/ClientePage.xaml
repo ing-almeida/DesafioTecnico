@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:DesafioTecnico.ViewModels"
+             x:Class="DesafioTecnico.Views.ClientesPage"
+             Title="Gerenciamento de Clientes">
+
+    <ContentPage.BindingContext>
+        <viewModels:ClienteViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20">
+
+        <!-- Campos de entrada com placeholders Nome/Idade/Endereço -->
+        <Entry Placeholder="Nome" Text="{Binding Nome}" />
+        <Entry Placeholder="Idade" Keyboard="Numeric" Text="{Binding Idade}" />
+        <Entry Placeholder="Endereço" Text="{Binding Endereco}" />
+
+        <!-- Botão para editar os dados do cliente -->
+        <Button Text="{Binding TextoBotao}" Command="{Binding AdicionarOuEditarClienteCommand}" />
+
+        <Label Text="Clientes cadastrados" FontAttributes="Bold" Margin="10,20,10,5" />
+
+        <!-- Lista de clientes já cadastrados-->
+        <CollectionView ItemsSource="{Binding Clientes}" 
+                        SelectionMode="Single"
+                        SelectedItem="{Binding ClienteSelecionado, Mode=TwoWay}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Gray" CornerRadius="5" Padding="10" BackgroundColor="LightGray">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Nome}" FontSize="16" FontAttributes="Bold"/>
+                                <Label Text="{Binding Idade, StringFormat='Idade: {0}'}"/>
+                                <Label Text="{Binding Endereco, StringFormat='Endereço: {0}'}"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                <Button Text="✏️" Command="{Binding Source={x:Reference Page}, Path=BindingContext.AdicionarOuEditarClienteCommand}" CommandParameter="{Binding}" />
+                                <Button Text="🗑️" Command="{Binding Source={x:Reference Page}, Path=BindingContext.ExcluirClienteCommand}" CommandParameter="{Binding}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+</ContentPage>
