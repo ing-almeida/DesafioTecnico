@@ -29,5 +29,4 @@ Aguardo feedbacks! Obrigada. 😊
 Abaixo estão algumas capturas de tela do aplicativo em execução:
 • Tela principal: Esta é a única tela do aplicativo, onde é possível cadastrar, visualizar, editar e excluir clientes.
 
-![print1](https://github.com/user-attachments/assets/21b33105-97cb-453a-9c30-ecbdcf788eb2) ![print2 (2)](https://github.com/user-attachments/assets/94d8f4ad-08c6-4613-b9bc-fb88b7400d6a) ![image](https://github.com/user-attachments/assets/1f9b0eb4-0a45-400f-b1d6-32edb0e2a4f9)
-
+![print1](https://github.com/user-attachments/assets/21b33105-97cb-453a-9c30-ecbdcf788eb2) ![print2 (2)](https://github.com/user-attachments/assets/94d8f4ad-08c6-4613-b9bc-fb88b7400d6a) ![image](https://github.com/user-attachments/assets/1f9b0eb4-0a45-400f-b1d6-32edb0e2a4f9) ![print15](https://github.com/user-attachments/assets/a2877e7a-de57-40ae-817f-95faab562cf0) ![print16](https://github.com/user-attachments/assets/3721a3a5-909d-400c-831d-016519381996)
